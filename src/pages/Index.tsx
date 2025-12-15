@@ -23,30 +23,30 @@ export default function Index() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-xl font-heading font-semibold text-primary">
-              Mr.Denis
+              Denis Mureskae
             </div>
             <div className="hidden md:flex gap-8 text-sm font-medium">
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-foreground/70 hover:text-foreground transition-colors"
+                className="text-primary/80 hover:text-primary transition-colors"
               >
                 О себе
               </button>
               <button
                 onClick={() => scrollToSection('format')}
-                className="text-foreground/70 hover:text-foreground transition-colors"
+                className="text-primary/80 hover:text-primary transition-colors"
               >
                 Формат работы
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-foreground/70 hover:text-foreground transition-colors"
+                className="text-primary/80 hover:text-primary transition-colors"
               >
                 Услуги
               </button>
               <button
                 onClick={() => setShowContactDialog(true)}
-                className="text-foreground/70 hover:text-foreground transition-colors"
+                className="text-primary/80 hover:text-primary transition-colors"
               >
                 Запись
               </button>
@@ -69,7 +69,7 @@ export default function Index() {
               <Button
                 onClick={() => setShowContactDialog(true)}
                 size="lg"
-                className="glass px-8 py-6 text-base font-medium rounded-xl hover:scale-105 transition-transform"
+                className="btn-glass px-8 py-6 text-base rounded-xl"
               >
                 → Записаться на личную сессию
               </Button>
@@ -78,7 +78,7 @@ export default function Index() {
               <div className="glass rounded-2xl overflow-hidden">
                 <img
                   src="https://cdn.poehali.dev/files/photo_2025-11-11_16-02-37.jpeg"
-                  alt="Mr.Denis"
+                  alt="Denis Mureskae"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -102,7 +102,7 @@ export default function Index() {
             ].map((text, i) => (
               <div
                 key={i}
-                className="glass p-6 rounded-xl flex items-start gap-4 hover:bg-white/70 transition-all"
+                className="glass p-6 rounded-xl flex items-start gap-4 hover:bg-white/80 transition-all"
               >
                 <div className="text-primary text-xl mt-1">•</div>
                 <p className="text-lg text-foreground/90 font-normal">{text}</p>
@@ -206,7 +206,7 @@ export default function Index() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="glass p-6 rounded-xl flex flex-col items-center gap-4 text-center hover:bg-white/70 transition-all"
+                className="glass p-6 rounded-xl flex flex-col items-center gap-4 text-center hover:bg-white/80 transition-all"
               >
                 <Icon name={item.icon} size={32} className="text-primary" />
                 <p className="text-foreground/90 font-medium">{item.text}</p>
@@ -217,7 +217,7 @@ export default function Index() {
             <Button
               onClick={() => setShowContactDialog(true)}
               size="lg"
-              className="glass px-8 py-6 text-base font-medium rounded-xl hover:scale-105 transition-transform"
+              className="btn-glass px-8 py-6 text-base rounded-xl"
             >
               → Записаться на первую сессию
             </Button>
@@ -258,7 +258,7 @@ export default function Index() {
                 <Button
                   onClick={() => setShowContactDialog(true)}
                   variant="outline"
-                  className="w-full glass rounded-xl font-medium"
+                  className="w-full btn-glass rounded-xl"
                 >
                   Подробнее / Запросить формат
                 </Button>
@@ -278,7 +278,7 @@ export default function Index() {
             <Button
               onClick={() => setShowContactDialog(true)}
               size="lg"
-              className="glass px-8 py-6 text-base font-medium rounded-xl hover:scale-105 transition-transform"
+              className="btn-glass px-8 py-6 text-base rounded-xl"
             >
               → Начать работу
             </Button>
@@ -288,7 +288,7 @@ export default function Index() {
 
       <footer className="py-12 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto text-center space-y-4">
-          <p className="font-heading text-lg font-semibold">Mr.Denis</p>
+          <p className="font-heading text-lg font-semibold">Denis Mureskae</p>
           <p className="text-sm font-normal opacity-90">
             Стратег · Навигатор смыслов
           </p>
@@ -310,7 +310,7 @@ export default function Index() {
               href="https://wa.me/79680601602"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 glass p-6 rounded-xl hover:bg-white/70 transition-all group"
+              className="flex items-center gap-4 glass p-6 rounded-xl hover:bg-white/80 transition-all group"
             >
               <Icon
                 name="MessageCircle"
@@ -328,7 +328,7 @@ export default function Index() {
               href="https://t.me/mureskae"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 glass p-6 rounded-xl hover:bg-white/70 transition-all group"
+              className="flex items-center gap-4 glass p-6 rounded-xl hover:bg-white/80 transition-all group"
             >
               <Icon
                 name="Send"

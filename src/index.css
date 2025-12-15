@@ -114,19 +114,18 @@
 
 @layer utilities {
   .glass {
-    @apply bg-white/60 backdrop-blur-2xl border border-white/40 shadow-lg;
+    @apply bg-white/70 backdrop-blur-xl border border-white/50 shadow-lg;
   }
 
   .glass-dark {
-    @apply bg-slate-700/50 backdrop-blur-2xl border border-white/20 shadow-xl;
+    @apply bg-slate-800/60 backdrop-blur-xl border border-white/30 shadow-xl;
   }
 
-  .btn-glow {
-    @apply backdrop-blur-2xl bg-white/50 border border-white/60 transition-all duration-300;
+  .btn-glass {
+    @apply bg-white/80 backdrop-blur-xl border-2 border-primary/30 text-primary font-semibold shadow-lg transition-all duration-300;
   }
 
-  .btn-glow:hover {
-    @apply bg-white/70 shadow-xl;
-    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2);
+  .btn-glass:hover {
+    @apply bg-white/95 border-primary/50 scale-105 shadow-xl;
   }
 }
