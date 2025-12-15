@@ -71,7 +71,7 @@ export default function Index() {
                 size="lg"
                 className="btn-glass px-8 py-6 text-base rounded-xl"
               >
-                → Записаться на личную сессию
+                → Записаться на встречу
               </Button>
             </div>
             <div className="animate-fade-in-delayed opacity-0">
@@ -179,16 +179,130 @@ export default function Index() {
       </section>
 
       <section id="about" className="py-20 px-6 bg-white/30">
-        <div className="container mx-auto max-w-4xl text-center space-y-8">
-          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary">
-            Кто я и почему мне можно доверять
+        <div className="container mx-auto max-w-4xl space-y-12">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary text-center">
+            Кто я
           </h2>
-          <p className="text-lg md:text-xl text-foreground/80 font-normal leading-relaxed max-w-3xl mx-auto">
-            Я работаю на стыке интуиции, эстетики и системного
-            мышления. Мой опыт — годы наблюдений за людьми, их выборами и
-            последствиями. Я вижу, где человек теряет себя — и как вернуть
-            целостность.
-          </p>
+          <div className="glass p-10 rounded-2xl space-y-8 text-left">
+            <div className="space-y-4">
+              <p className="text-lg text-foreground/90 font-medium leading-relaxed">
+                Я не коуч, не мотивационный спикер, не эзотерик, не психолог в
+                классическом смысле и не инфоговорун.
+              </p>
+              <p className="text-lg text-foreground/80 font-normal leading-relaxed">
+                Моя ниша — работа с мышлением и восприятием людей на стыке
+                смысла, эстетики и реальности.
+              </p>
+              <p className="text-lg text-foreground/80 font-normal leading-relaxed">
+                Я помогаю людям видеть себя и свою жизнь без иллюзий,
+                распознавать, где они живут не свою жизнь, и находить точку
+                точного действия, которое даёт реальный сдвиг, а не вдохновение
+                на два дня.
+              </p>
+            </div>
+
+            <div className="pt-6 border-t border-primary/20">
+              <h3 className="font-heading text-2xl font-semibold text-primary mb-6">
+                Что именно я делаю
+              </h3>
+              <div className="space-y-3">
+                {[
+                  'показываю человеку его слепые зоны — без утешений и "поддержки ради поддержки"',
+                  'перевожу внутренний хаос в ясную структуру решений',
+                  'соединяю интуицию, эмоции и холодную реальность, а не противопоставляю их',
+                  'работаю один на один, глубоко, точно, без массовых программ',
+                  'использую образ, символ, диалог и смысл, а не техники ради техник',
+                ].map((text, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <div className="text-primary text-lg mt-1">•</div>
+                    <p className="text-foreground/80 font-normal">{text}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-lg text-foreground/90 font-medium mt-6 italic">
+                Я не "веду за руку". Я ставлю зеркало, от которого невозможно
+                отвернуться.
+              </p>
+            </div>
+
+            <div className="pt-6 border-t border-primary/20">
+              <h3 className="font-heading text-2xl font-semibold text-primary mb-6">
+                С кем я работаю
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <p className="text-foreground/80 font-medium mb-3">
+                    Мои люди — это:
+                  </p>
+                  <div className="space-y-2">
+                    {[
+                      'женщины 28–45, умные, чувствующие, уставшие "тащить"',
+                      'те, у кого всё вроде есть, но внутри пусто или застряло',
+                      'те, кто слишком долго был сильным, удобным или "правильным"',
+                      'те, кто чувствует, что жизнь проходит мимо, но не понимает — где именно сбой',
+                    ].map((text, i) => (
+                      <div key={i} className="flex items-start gap-3">
+                        <div className="text-primary text-lg mt-1">•</div>
+                        <p className="text-foreground/80 font-normal">{text}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className="text-foreground/80 font-medium mb-3">
+                    Я не работаю с теми, кто хочет:
+                  </p>
+                  <div className="space-y-2">
+                    {[
+                      'быстрых лайфхаков',
+                      'волшебных таблеток',
+                      'чтобы их пожалели или погладили по голове',
+                    ].map((text, i) => (
+                      <div key={i} className="flex items-start gap-3">
+                        <div className="text-red-500 text-lg mt-1">×</div>
+                        <p className="text-foreground/80 font-normal">{text}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-6 border-t border-primary/20">
+              <h3 className="font-heading text-2xl font-semibold text-primary mb-6">
+                Моя ценность
+              </h3>
+              <p className="text-lg text-foreground/90 font-medium mb-4">
+                Моя ценность — ясность.
+              </p>
+              <p className="text-foreground/80 font-normal mb-4">
+                После разговора со мной:
+              </p>
+              <div className="space-y-2 mb-6">
+                {[
+                  'становится тихо в голове',
+                  'появляется один честный вектор, а не десять желаний',
+                  'уходит самообман',
+                  'возвращается ощущение "я на своём месте"',
+                ].map((text, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <div className="text-primary text-lg mt-1">•</div>
+                    <p className="text-foreground/80 font-normal">{text}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-lg text-foreground/90 font-medium italic">
+                Я не обещаю лёгкий путь. Я помогаю перестать идти ложным.
+              </p>
+            </div>
+
+            <div className="pt-6 border-t border-primary/20">
+              <p className="text-xl text-foreground/90 font-medium leading-relaxed italic text-center">
+                Я работаю с людьми, которые готовы перестать врать себе и хотят
+                жить свою жизнь, а не чью-то версию успеха.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -219,7 +333,7 @@ export default function Index() {
               size="lg"
               className="btn-glass px-8 py-6 text-base rounded-xl"
             >
-              → Записаться на первую сессию
+              → Записаться на первую встречу
             </Button>
           </div>
         </div>
