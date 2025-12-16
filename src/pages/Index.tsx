@@ -23,7 +23,7 @@ export default function Index() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-xl font-heading font-semibold text-primary">
-              Denis Mureskae
+              ТОЧКА НОЛЬ
             </div>
             <div className="hidden md:flex gap-8 text-sm font-medium">
               <button
